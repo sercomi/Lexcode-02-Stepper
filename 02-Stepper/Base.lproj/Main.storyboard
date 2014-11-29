@@ -24,6 +24,9 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cUg-1F-3nh">
                                 <rect key="frame" x="253" y="124" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperTapped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="act-FE-ZVA"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -34,6 +37,10 @@
                             <constraint firstItem="cUg-1F-3nh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="104" id="lJG-ej-vv2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contador" destination="MBo-Mw-Leh" id="MZ4-Cy-nsA"/>
+                        <outlet property="stepper" destination="cUg-1F-3nh" id="0Vw-UN-Ln7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
